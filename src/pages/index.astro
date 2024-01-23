@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Jessica from "../../public/avatar-jessica.jpeg"
+---
+
+<Layout title="Social Links">
+	<main>
+		<Card 
+			imgUser={Jessica.src}
+			name='Jessica Randall'
+			location='London, United Kingdom'
+			description='"Front-end developer and avid reader."'
+			gitHubLink='https://github.com/'
+			fMLink='https://www.frontendmentor.io/home'
+			linkedinLink='https://www.linkedin.com/'
+			twitterLink='https://twitter.com/?lang=es'
+			instagramLink='https://www.instagram.com/'/>
+	</main>
+</Layout>

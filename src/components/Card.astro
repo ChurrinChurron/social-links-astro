@@ -1,0 +1,32 @@
+---
+import "../styles/Card.css"
+
+interface Props {
+	imgUser: string,
+	name: string,
+	location: string,
+	description: string,
+	gitHubLink: string,
+	fMLink: string,
+	linkedinLink: string,
+	twitterLink: string,
+	instagramLink: string
+
+}
+
+const { imgUser, name, location, description, gitHubLink, fMLink, linkedinLink, twitterLink, instagramLink } = Astro.props;
+---
+
+<div class="card">
+	<img src={imgUser} alt={name}>
+	<h2>{name}</h2>
+	<h3>{location}</h3>
+	<p>{description}</p>
+	<div class="card__links">
+		<a href={gitHubLink}>GitHub</a>
+		<a href={fMLink}>Frontend Mentor</a>
+		<a href={linkedinLink}>LinkedIn</a>
+		<a href={twitterLink}>Twitter</a>
+		<a href={instagramLink}>Instagram</a>
+	</div>
+</div>
